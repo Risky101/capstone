@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn import metrics
 
-data = pd.read_csv(r'F:\Kris\Documents\ULL\a 2020 Spring\INFX 490\Project\data\fraudlearn.csv')
+data = pd.read_csv(r'----ENTER CSV HERE----')
 
 data.head()
 
