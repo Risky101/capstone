@@ -68,7 +68,7 @@ print()
 print('Accuracy: ',metrics.accuracy_score(y_test, y_pred))
 
 try:
-    con = psycopg2.connect("dbname=testdb user=postgres password=11111111")
+    con = psycopg2.connect("dbname=testdb user=postgres password=----ENTER PASSWORD HERE----")
     cur = con.cursor()
     query = " SELECT npi,bene_count,total_claim_count,total_30_day_fill_count,total_day_supply,total_drug_cost,bene_count_ge65,total_claim_count_ge65,total_30_day_fill_count_ge65,total_day_supply_ge65,total_drug_cost_ge65 FROM public.part_d ORDER BY Random() LIMIT 1; "
     cur.execute(query)
